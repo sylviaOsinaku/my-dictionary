@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Dictionary</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div><i class="fa fa-book"></i></div>
+    <div class="right-nav-section">
+      <div><select name="fonts" id="fonts" class="fonts">
+          <option value="montserrat" class="font">Montserrat</option>
+          <option value="Poppins" class="font">Poppins</option>
+          <option value="serif" class="font">serif</option>
+          <option value="cursive" class="font">cursive</option>
+        </select>
+      </div>
+      <div class="header-line"></div>
+      <div><!-- Rounded switch -->
+        <label class="switch">
+          <input type="checkbox" class="toggle-button">
+          <span class="slider round"></span>
+        </label>
+
+        <i class="fa fa-sun-o mood"></i>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <header>
+    <input type="text" name="the_word" id="the_word" class="input--text">
+    <i class="fa fa-search search-button"></i>
+  </header>
+
+  <main class="container">
+
+  </main>
+
+  <div class="error-message"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
