@@ -1,0 +1,248 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 2em 5em;
+  background-color: #f3f3f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .container {
+  animation: ;
+} */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+.right-nav-section {
+  display: flex;
+  gap: 1em;
+}
+
+.fa-book {
+  font-size: 1.9em;
+  color: gray;
+}
+
+.fonts {
+  background-color: rgba(204, 204, 204, 0.475);
+  padding: .3em;
+  border: none;
+  border-radius: 4px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 21px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: rgba(76, 0, 130, 0.749);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px rgba(76, 0, 130, 0.749);
+  ;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+input {
+  position: relative;
+  padding: .6em;
+  border: none;
+  background-color: rgba(172, 164, 164, 0.477);
+  border-radius: 5px;
+  width: 50%;
+
+}
+
+input:focus {
+  outline: none;
+}
+
+.fa-search {
+  position: absolute;
+  text-align: end;
+  margin-left: -1.5em;
+  margin-top: .3em;
+  color: rgba(76, 0, 130, 0.749);
+  cursor: pointer;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.fa-play-circle {
+  font-size: 3em;
+  color: rgba(76, 0, 130, 0.749);
+}
+
+.phonetics_text {
+  color: rgba(76, 0, 130, 0.749);
+  font-weight: 700;
+}
+
+.first-part-of-speech-container {
+  margin-bottom: 2em;
+}
+
+.first-part-of-speech {
+  font-weight: 600;
+}
+
+.speech-container {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.header-line {
+  display: block;
+  /* margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto; */
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.line-1 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+}
+
+.meaning {
+  font-weight: 400;
+  color: gray;
+  font-size: .9rem;
+  margin-bottom: 1.2em;
+}
+
+.list-container {
+  margin-left: 2em;
+  margin-bottom: 3em;
+}
+
+.list {
+  margin-bottom: .6em;
+}
+
+.synonym {
+  color: gray;
+}
+
+.synonym-word {
+  color: rgba(76, 0, 130, 0.749);
+  font-weight: 700;
+}
+
+.synonym-container {
+  display: flex;
+  gap: 1.2em;
+}
+
+.second-part-of-speech-container {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.verb {
+  font-weight: 700;
+}
+
+option {
+  transition: all .15s;
+}
+
+.dark-background {
+  background-color: #121212;
+  color: #fff;
+  transition: all 0.85s;
+}
+
+.dark-color {
+  color: #fff;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+@media only screen and (max-width:490px) {
+  body {
+    margin: 1em;
+  }
+
+  a {
+    color: #fff;
+  }
+}
